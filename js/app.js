@@ -108,10 +108,11 @@ Player.prototype.reset = function() {
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     if (this.prev_y === 2 && this.y === 380 && this.x === this.prev_x) {
-        ctx.drawImage(Resources.get('images/Heart.png'), this.x, this.prev_y);
+        ctx.drawImage(Resources.get('images/Heart3.png'), this.x, this.prev_y);
     }
     if ((this.hit === 1) && (this.prev_y === 220 || this.prev_y === 140 || this.prev_y === 60)) {
-            ctx.drawImage(Resources.get('images/hit-ouch.png'), this.prev_x, this.prev_y+30);
+            hitImg = this.prev_y === 140 ? 'images/hit-ohdear.png' : 'images/hit-ouch2.png';
+            ctx.drawImage(Resources.get(hitImg), this.prev_x, this.prev_y+30);
         }
 }
 
