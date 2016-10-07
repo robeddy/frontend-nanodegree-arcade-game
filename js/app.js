@@ -186,9 +186,9 @@ Player.prototype.handleInput = function(key) {
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
-var enemy1 = new Enemy(-60,226,200);
-var enemy2 = new Enemy(-60,142,300);
-var enemy3 = new Enemy(-60,58,500);
+var enemy1 = new Enemy(-60,226,15);
+var enemy2 = new Enemy(-60,142,25);
+var enemy3 = new Enemy(-60,58,35);
 
 
 var allEnemies = [enemy1, enemy2, enemy3];
